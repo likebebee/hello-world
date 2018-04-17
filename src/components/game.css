@@ -1,0 +1,39 @@
+body{
+	font-size: 14px;
+}
+ol,ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.board-row{
+	width: 100px;
+}
+.board-row:after{
+	content: '';
+	width: 0;
+	visibility: hidden;
+	overflow: hidden;
+	clear: both;
+}
+.board-row button{
+	background: none;
+	float: left;
+	width:30px;
+	height:30px;
+	border:1px #ccc solid;
+}
+.board-row :nth-child(2){
+	width:30px;
+	height:30px;
+	border: none;
+	border-top:1px #ccc solid;
+	border-bottom:1px #ccc solid;
+}
+.board :nth-child(3) button{
+	border-top:none;
+	border-bottom:none;
+}
+.board .status{
+	margin-bottom: 10px; 
+}
